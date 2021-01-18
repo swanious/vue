@@ -1,17 +1,35 @@
+body, main {
+  font-family: 'Noto Sans',Roboto,'맑은 고딕','Malgun Gothic','돋움',dotum,"open sans","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
 .burger__menu {
   display: none;
 }
 
-@media screen and (max-width: 1263px) {
+.v-btn.v-size--default {
+  font-size: 1.1rem !important;
+  font-weight: bold;
 }
 
+div.v-input__control {
+  display: none;
+}
+
+
 @media screen and (max-width: 980px) {
+  div.menus {
+    display: none;
+  }
 
   div.col-2 {
     display: none;
   }
 
   .burger__menu {
+    display: inline;
+  }
+
+  div.v-input__control {
     display: inline;
   }
 
