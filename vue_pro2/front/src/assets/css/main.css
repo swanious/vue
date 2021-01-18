@@ -1,0 +1,21 @@
+.burger__menu {
+  display: none;
+}
+
+@media screen and (max-width: 1263px) {
+}
+
+@media screen and (max-width: 980px) {
+
+  div.col-2 {
+    display: none;
+  }
+
+  .burger__menu {
+    display: inline;
+  }
+
+  div.avatar__menu {
+    display: none;
+  }
+}
