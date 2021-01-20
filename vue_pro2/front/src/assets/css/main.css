@@ -1,7 +1,29 @@
 body, main {
   font-family: 'Noto Sans',Roboto,'맑은 고딕','Malgun Gothic','돋움',dotum,"open sans","Helvetica Neue",Helvetica,Arial,sans-serif !important;
 }
-
+.navbar__logo {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.navbar__contents {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-grow: 1;
+}
+.navbar__contents .btns {
+  max-width: 110px;
+  width: 100px;
+}
+.navbar__user {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  right: 0;
+  height: 100%;
+}
 .burger__menu {
   display: none;
 }
@@ -33,7 +55,7 @@ div.v-input__control {
     display: inline;
   }
 
-  div.avatar__menu {
+  div.navbar__user {
     display: none;
   }
 }

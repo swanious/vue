@@ -5,15 +5,14 @@
       color="white"
       flat
     >
-      <div>
-        <h1 id="logo">SSAFYING</h1>
+      <div class="navbar__logo">
+        <h2>SSAFYING</h2>
       </div>
-      <v-container class="py-1 fill-height">
-        <v-spacer></v-spacer>
-
+      <v-container class="navbar__contents py-1 fill-height">
         <!-- 메뉴 링크 -->
         <div class="menus">
           <v-btn
+            class="btns"
             v-for="link in links"
             :key="link"
             text
@@ -21,32 +20,20 @@
             {{ link }}
           </v-btn>
         </div>
-        <v-spacer></v-spacer>
-        <!-- 검색 기능 -->
-        <v-responsive max-width="260">
-          <v-text-field
-            dense
-            flat
-            hide-details
-            rounded
-            solo-inverted
-          ></v-text-field>
-        </v-responsive>
-        <v-spacer></v-spacer>
-        <!-- 프로필 / 알람 -->
-        <div class="avatar__menu">
-          <v-avatar
-            class="mx-5"
-            color="grey darken-1"
-            size="32"
-          ></v-avatar>
-          <v-avatar
-            class="mx-5"
-            color="grey darken-1"
-            size="32"
-          ></v-avatar>
-        </div>
       </v-container>
+      <!-- 프로필 / 알람 -->
+      <div class="navbar__user">
+        <v-avatar
+          class="mx-5"
+          color="grey darken-1"
+          size="32"
+        ></v-avatar>
+        <v-avatar
+          class="mx-5"
+          color="grey darken-1"
+          size="32"
+        ></v-avatar>
+      </div>
       <!-- 햄버거 메뉴 -->
       <div class="text-center burger__menu">
         <v-menu offset-y>
@@ -90,6 +77,7 @@
     <v-main class="grey lighten-3">
       <v-container>
         <v-row>
+          <v-col cols="2"></v-col>
           <v-col>
             <v-sheet
               min-height="70vh"
